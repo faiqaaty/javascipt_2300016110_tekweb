@@ -8,6 +8,36 @@
     <title>My To-Do List</title>
 </head>
 <body>
+    <div class="controls">
+        <h2>Change the Page!</h2>
+
+        <label for="bgColor">Background Color:</label>
+        <select id="bgColor">
+            <option value="white">White</option>
+            <option value="skyblue">Sky Blue</option>
+            <option value="red">Red</option>
+            <option value="lightpink">Light Pink</option>
+            <option value="grey">Grey</option>
+        </select>
+        <br><br>
+
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="12" max="24" value="16">
+        <br><br>
+
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <br><br>
+
+        <label for="fontStyle">Font Style:</label>
+        <select id="fontStyle">
+            <option value="Arial, sans-serif">Sans-serif (Arial)</option>
+            <option value="'Times New Roman', serif">Serif (Times New Roman)</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Impact">Impact</option>
+            <option value="Lucida Console">Lucida Console</option>
+        </select>
+    </div>
+
     <div class="container">
         <h2>My To-Do List</h2>
         <input type="text" id="taskInput" placeholder="Add a new task...">
@@ -24,7 +54,6 @@
             </tbody>
         </table>
     </div>
-
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
